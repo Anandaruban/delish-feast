@@ -2,6 +2,7 @@ import { useState } from "react";
 import RestaurantCard from "./RestaurantCard";
 import useRestaurantData from "../hooks/useRestaurantData";
 import { RestaurantShimmer } from "./Shimmer";
+import { TfiSearch } from "react-icons/tfi";
 
 const Body = () => {
 
@@ -32,7 +33,7 @@ const Body = () => {
           onClick={findRestaurants}
             className="text-xl bg-[#c37d92] cursor-pointer pr-5 pl-5 rounded-r-md font-semibold content-center text-white hover:bg-[#d89a9e] transition-all"
             >
-            Search
+            <TfiSearch />
           </button>
           
           <button

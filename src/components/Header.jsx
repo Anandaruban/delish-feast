@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import delishFeastLogo from '../utils/images/delish-feast-logo.png'
 import { Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
@@ -9,10 +8,7 @@ import { HiOutlineStatusOffline } from "react-icons/hi";
 
 const Header = () => {
 
-  const [log, setLog] = useState('LogIn');
   const isOnline = useOnlineStatus()
-
-  const toggle = () => log === 'LogIn' ? setLog('LogOut') : setLog('LogIn');
 
   const cartItems = useSelector((store) => store.cart.items)
 
@@ -30,7 +26,6 @@ const Header = () => {
             <Link to={"/cart"}><FiShoppingCart className='hover:text-[#bc6c25] transition-all' /></Link>
             {cartItems.length > 0 && <span className='bg-green-300 rounded-full px-2 text-[16px]'>{cartItems.length}</span>}
           </div>
-          <button onClick={toggle} className='hover:text-[#bc6c25] transition-all'>{log}</button>
           {isOnline ? <HiOutlineStatusOnline className='text-green-500' /> : <HiOutlineStatusOffline className='text-red-600' />}
         </ul>
       </div>

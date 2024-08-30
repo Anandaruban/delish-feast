@@ -23,6 +23,8 @@ const RestaurantMenu = () => {
   } = restaurantMenu?.cards[2]?.card?.card?.info || [];
 
   const menuList = restaurantMenu?.cards[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter((items) => items?.card?.card?.["@type"] === "type.googleapis.com/swiggy.presentation.food.v2.ItemCategory") || [];
+  console.log(menuList);
+  
 
   if (restaurantMenu === null) {
     return <RestaurantMenuShimmer />;

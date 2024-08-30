@@ -24,7 +24,7 @@ const Contact = () => {
   }
 
   return (
-    <div className="w-[100%] flex flex-wrap justify-evenly items-center">
+    <div className="w-[100%] h-[32rem] flex flex-wrap justify-evenly items-center">
       <div>
         <img className="w-[90%] object-cover" src={ContactUs} alt="ContactUs" />
       </div>

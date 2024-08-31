@@ -14,11 +14,11 @@ const Header = () => {
 
   return (
     <div className='flex justify-between m-4 h-[6rem] border-b-2 shadow-[0_15px_40px_20px_rgba(40,44,63,.15)] items-center'>
-      <div className='pl-20'>
+      <div className='pl-20 '>
         <Link to={"/"}><img src={delishFeastLogo} alt="delishFeastLogo" className='h-20 rounded-full ' /></Link>
       </div>
       <div>
-        <ul className="flex gap-8 text-[#3d4152] font-medium text-[20px] items-center pr-7">
+        <ul className="flex font-header gap-8 text-[#3d4152] font-medium text-[20px] items-center pr-7">
           <Link to={"/"}><li className='hover:text-[#bc6c25] transition-all'>Home</li></Link>
           <Link to={"/about"}><li className='hover:text-[#bc6c25] transition-all'>About</li></Link>
           <Link to={"/contact"}><li className='hover:text-[#bc6c25] transition-all'>Contact</li></Link>

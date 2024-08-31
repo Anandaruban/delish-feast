@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import RestaurantMenuItemList from "./RestaurantMenuItemList";
 import { clearCart } from "../redux/cartSlice";
 import { EMPTY_CART_IMAGE } from "../utils/Links";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -11,7 +12,7 @@ const Cart = () => {
   const clear = () => dispatch(clearCart())
 
   return (
-    <div className="w-[100%] h-[calc(100vh - 80px)] flex flex-col text-center items-center justify-center">
+    <div className="w-[100%] h-[calc(100vh - 80px)] flex flex-col text-center items-center justify-center font-resTitle">
       <h1 className="w-full text-center text-2xl font-bold border-b-2 mb-[30px]">
         Cart
       </h1>
@@ -35,8 +36,8 @@ const Cart = () => {
               <div className="text-center flex flex-col mt-3 text-2xl font-bold">
               <span>Your cart is empty!</span>
               <span>Add items to your cart.</span>
-            </div>
-            <button>Return to Restaurant</button>
+              <Link to={"/"}><button className="bg-[#386641] m-auto w-[16rem] p-4 font-button text-xl text-white rounded-md font-semibold cursor-pointer text-center hover:bg-[#6a994e] transition-all" >Return to Restaurant</button></Link>
+            </div> 
             </div>
           )
         }

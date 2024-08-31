@@ -42,17 +42,17 @@ const RestaurantMenu = () => {
         <section>
           <div className="text-start">
             <div className="grid justify-start">
-              <h1 className="font-extrabold text-[30px]">{name}</h1>
+              <h1 className="font-extrabold text-[28px] font-resTitle">{name}</h1>
               <div className="flex items-center font-bold text-lg">
                 <MdStars
                   className="text-white w-[20px] h-[20px] rounded-[100%] p-[1px] mr-[5px]" 
                   style={avgRating >= 4.0 ? {backgroundColor: "green"} : {backgroundColor: "red"}}
                 />
-                <p className="">{avgRating}</p>
-                <p className="mx-2">({totalRatingsString})</p>
+                <p className="font-resTitle">{avgRating}</p>
+                <p className="mx-2 font-resTitle">({totalRatingsString})</p>
               </div>
             </div>
-            <div className="text-[17px]">
+            <div className="text-[17px] font-resTitle">
               <p className="text-[#696969] text-start">{cuisines?.join(", ")}</p>
               <p className="text-[#9C9C9C]">{areaName}<span>, </span><span>{city}</span></p>
             </div>

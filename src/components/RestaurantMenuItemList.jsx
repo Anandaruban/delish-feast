@@ -32,7 +32,7 @@ const RestaurantMenuItemList = ({items}) => {
         key={id}>
 
           <div className="">
-            <div className="py-2 w-[25rem]">
+            <div className="py-2 w-[25rem] font-resTitle">
               <span className="text-[#02060cbf] font-bold text-lg">{name}</span>
               <div className="flex items-center">
                 <MdOutlineCurrencyRupee className="text-[#02060ceb] font-normal text-base" />
@@ -46,7 +46,7 @@ const RestaurantMenuItemList = ({items}) => {
               <p className="w-[34rem] h-[38px] font-normal text-[#02060c99] truncate text-base  ">{description}</p>
             </div>
           </div>
-          <div className="w-fit px-4 h-36">
+          <div className="w-fit px-4 h-36 font-resTitle">
             <img 
             className="h-36 w-[156px] rounded-xl"
             src={RESTAURANTS_DISHES_MENU_URL + imageId} alt="" />

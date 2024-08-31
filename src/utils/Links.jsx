@@ -13,6 +13,10 @@ export const GITHUB_USERNAME = "Anandaruban";
 
 export const LINKEDIN_LINK = "https://www.linkedin.com/in/anandaruban/";
 export const GITHUB_LINK = "https://github.com/Anandaruban";
-export const EMAIL_LINK = "mailto:ruban7anand@gmal.com";
+export const EMAIL_LINK = "mailto:ruban7anand@gmail.com";
+
 
 export const EMPTY_CART_IMAGE = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto/2xempty_cart_yfxml0";
+
+
+export const RESTAURANTS_UPDATE_URL = "https://www.swiggy.com/dapi/restaurants/list/update"

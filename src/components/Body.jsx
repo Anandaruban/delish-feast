@@ -3,8 +3,11 @@ import RestaurantCard from "./RestaurantCard";
 import useRestaurantData from "../hooks/useRestaurantData";
 import { RestaurantShimmer } from "./Shimmer";
 import { TfiSearch } from "react-icons/tfi";
+import { Link } from "react-router-dom";
 
 const Body = () => {
+  console.log("render");
+  
 
   const [searchRestaurant, setSearchRestaurant] = useState("");
   const [restaurantsData, filterRestaurantsData, setFilterRestaurantsData] = useRestaurantData();
@@ -38,17 +41,19 @@ const Body = () => {
           
           <button
           onClick={topRatedRestaurants}
-            className="text-xl bg-[#c37d92] cursor-pointer p-3 ml-4 font-semibold rounded-md content-center text-white hover:bg-[#d89a9e] transition-all"
+            className="text-xl bg-[#c37d92] cursor-pointer p-3 ml-4 font-semibold rounded-md content-center text-white font-button hover:bg-[#d89a9e] transition-all"
           >
             Top Rated Restaurant
           </button>
           <div className="flex items-center">
-            <button className="bg-[#3E78B2] text-white p-3 px-4 font-semibold rounded-md mx-3 hover:bg-[#6b9080] transition-all" onClick={reset}>RESET</button>
+            <button className="bg-[#3E78B2] text-white p-3 px-4 font-semibold rounded-md mx-3 font-button hover:bg-[#6b9080] transition-all" onClick={reset}>RESET</button>
           </div>
         </div>
         <div className="flex flex-wrap gap-8 mx-[15.4rem]">
           {filterRestaurantsData.map((res) => (
-              <RestaurantCard key={res.info.id} data={res} />
+              <Link key={res.info.id} to={/restaurants/ + res.info.id}>
+                <RestaurantCard data={res} />
+              </Link>
             ))}
         </div>
       </div>

@@ -10,6 +10,7 @@ export default {
         'header': ["Prompt", "sans-serif"],
         'button': ["Rubik", "sans-serif"],
         'resTitle': ["Kanit", "sans-serif"],
+        'searchBtn': ["Poppins", "sans-serif"],
       },
     },
   },

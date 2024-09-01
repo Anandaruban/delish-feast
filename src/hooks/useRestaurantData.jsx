@@ -11,8 +11,8 @@ const useRestaurantData = () => {
     try {
       const data = await fetch(RESTAURANTS_DATA_URL)
       const jsonObject = await data.json()
-      setRestaurantsData(jsonObject?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
-      setFilterRestaurantsData(jsonObject?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setRestaurantsData(jsonObject?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+      setFilterRestaurantsData(jsonObject?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     }
     catch (error) {
       console.error("Failed to fetch APIs", error);

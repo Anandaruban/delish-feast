@@ -9,8 +9,6 @@ const Body = () => {
 
   const [searchRestaurant, setSearchRestaurant] = useState("");
   const [restaurantsData, filterRestaurantsData, setFilterRestaurantsData] = useRestaurantData();
-
-  const [updateData, setUpdateData] = useState("");
   
   const updateValue = (e) => setSearchRestaurant(e.target.value);
 

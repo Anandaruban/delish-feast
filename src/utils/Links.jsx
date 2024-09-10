@@ -2,6 +2,8 @@ export const RESTAURANTS_DATA_URL = "https://www.swiggy.com/dapi/restaurants/lis
 
 export const RESTAURANTS_IMAGE_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
 
+export const CORS_PROXY_URL = "https://thingproxy.freeboard.io/fetch/"
+
 export const RESTAURANTS_MENU_URL = "https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=11.0168445&lng=76.9558321&restaurantId=";
 
 export const RESTAURANTS_DISHES_MENU_URL = "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_300,h_300,c_fit/";

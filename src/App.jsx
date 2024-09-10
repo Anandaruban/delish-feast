@@ -5,6 +5,7 @@ import cartStore from "./redux/cartStore";
 import Footer from "./components/Footer";
 
 const App = () => {
+
   return (
     <Provider store={cartStore}>
       <div className="">

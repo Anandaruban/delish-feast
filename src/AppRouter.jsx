@@ -1,4 +1,5 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import "./App.css"
 import App from './App'
 import Body from "./components/Body";
 import Contact from './components/Contact';

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { RESTAURANTS_MENU_URL } from "../utils/Links"
+import { CORS_PROXY_URL } from "../utils/Links"
 
 const useRestaurantMenu = (resId) => {
 
@@ -7,7 +8,7 @@ const useRestaurantMenu = (resId) => {
 
   const fetchMenu = async () => {
     try {
-      const data = await fetch(RESTAURANTS_MENU_URL + resId)
+      const data = await fetch(CORS_PROXY_URL + RESTAURANTS_MENU_URL + resId)
       const obj = await data.json()
       console.log(obj);
       setRestaurantMenu(obj?.data)

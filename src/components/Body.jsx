@@ -17,7 +17,7 @@ const Body = () => {
     setSearchRestaurant("");
   }
 
-  const topRatedRestaurants = () => setFilterRestaurantsData(restaurantsData.filter((r) => r.info.avgRating >= 4.3))
+  const topRatedRestaurants = () => setFilterRestaurantsData(restaurantsData.filter((r) => r.info.avgRating >= 4.0))
 
   const reset = () => {
     setFilterRestaurantsData(restaurantsData)

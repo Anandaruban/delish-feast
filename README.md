@@ -1,10 +1,12 @@
 Delish-Feast | An online food ordering app [--React, React-router, Redux-toolkit, Tailwindcss--]
 
-• Crafted a high-performance and responsive food ordering app, leveraging Swiggy’s live API to 
-deliver real-time data to users.
+• Created a food delivery app from scratch, harnessing the capabilities of React and Redux Toolkit
+for robust data management.
 
-• Optimized user experience by incorporating shimmer effect, chunking, and Single Responsibility 
-Principle.
+• Leveraged Vite, a highly efficient and lightweight bundler. Seamlessly integrated real-time restaurant
+data from the Swiggy Live Public API and styling with TailwindCSS for efficient and seamless design.
 
-• Engineered efficient state management using Redux toolkit, enabling seamless communication between 
-components. 
+• A shimmer effect and chunking strategy to improve content loading times on the app, Single
+Responsibility Principle to enhance user experience led to an increase in user engagement.
+
+• Focused on a responsive, fast, and data-rich interface for an exceptional user experience.

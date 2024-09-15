@@ -23,16 +23,6 @@ const Body = () => {
     setFilterRestaurantsData(restaurantsData)
   }
 
-  const update = async () => {
-    const data = await fetch("https://www.swiggy.com/dapi/restaurants/list/update")
-    const result = await data.json()
-    console.log(result);
-  }
-
-  useEffect(() => {
-    update();
-  }, [])
-
   {return restaurantsData.length === 0 ? <RestaurantShimmer /> : (
     <div>
       <div className="">

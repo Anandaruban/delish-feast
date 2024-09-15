@@ -1,28 +1,51 @@
-import { LINKEDIN_LINK } from "../utils/Links";
+import delishFeastLogo from '../utils/images/delish-feast-logo.png'
+import { LINKEDIN_LINK, GITHUB_LINK,
+  EMAIL_LINK, } from "../utils/Links";
+import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
 
 const Footer = () => {
+
   const year = new Date().getFullYear();
 
   return (
-    <div className="w-full flex items-center justify-center gap-[2px] p-[18px] mt-[30px] bg-[#ffffff] shadow-[2px_7px_5px_6px_#0000009c]">
-      Created By
-      <span className="text-xl">❤️</span>
-      <a
-        className="text-purple-900 font-bold"
-        href={LINKEDIN_LINK}
-        target="_blank"
-      >
-        Anandaruban
-      </a>
-      <div>
-        <span className="mx-[5px] text-[20px]">&copy;</span>
-        {year}
+    <div className="text-center text-sm font-semibold border-t-2 pt-5 mt-5 flex items-center pl-20">
+      <div href="#" className="flex items-center justify-center mb-5 text-xl font-semibold text-gray-900">
+          <img src={delishFeastLogo} className="h-12 mr-3 rounded-full " alt="Landwind Logo" />
+          <h1 className=''>Delish Feast</h1>
       </div>
-      <strong className="pl-[5px]">
-        Delish <span className="text-[#E46F20]">Feast</span>
-      </strong>
+
+      <div className='flex items-center w-full pl-10'>
+        <span className=" text-sm text-center text-gray-500">© {year} Delish Feast. </span>
+        <span className=" text-sm text-center text-black pl-4">Created By ANANDARUBAN</span>
+      </div>
+
+      <div className="text-[2rem] w-full flex justify-center items-center gap-[7%] mb-4 pt-1">
+        <a href={LINKEDIN_LINK} target="_blank">
+          <span className="text-white bg-[#0a66c2] flex items-center justify-center h-[2.6rem] w-[2.6rem] rounded-[50%] text-[1.2rem] leading-[3rem] hover:scale-[1.05] transition-transform duration-300 ease-in-out">
+            <SiLinkedin />
+          </span>
+        </a>
+        <a
+          href={GITHUB_LINK}
+          className="text-white bg-[#333] flex items-center justify-center h-[2.6rem] w-[2.6rem] rounded-[50%] text-[1.2rem] leading-[3rem] hover:scale-[1.05] transition-transform duration-300 ease-in-out"
+          target="_blank"
+        >
+          <span>
+            <SiGithub />
+          </span>
+        </a>
+        <a
+          href={"mailto:" + EMAIL_LINK}
+          className="text-white bg-[#ea4335] flex items-center justify-center h-[2.6rem] w-[2.6rem] rounded-[50%] text-[1.2rem] leading-[3rem] hover:scale-[1.05] transition-transform duration-300 ease-in-out"
+          target='_blank'
+        >
+          <span>
+            <SiGmail />
+          </span>
+        </a>
+      </div>
     </div>
-  );
-};
+  )
+}
 
 export default Footer;
